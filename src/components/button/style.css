@@ -1,0 +1,33 @@
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	cursor:pointer;
+	font-size:15px;
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    outline: none;
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+}
+
+
+.button:active { background-color: #ccc; }
+
+.button.double { grid-column: span 2; }
+
+.button.triple { grid-column: span 3; }
+
+.button.operation { background-color: #fa8231; color: #FFF; }
+
+.button.operation:active { background-color: #fa8231cc; }
